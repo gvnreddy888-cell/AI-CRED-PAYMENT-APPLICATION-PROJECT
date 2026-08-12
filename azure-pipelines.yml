@@ -24,9 +24,9 @@ pool:
 variables:
 
   # Azure service connections
-  acrServiceConnection: 'ACRCONNECTION'
+  acrServiceConnection: 'dockeracr11'
 
-  azureServiceConnection: 'AI MANUAL'
+  azureServiceConnection: 'HdfcManual1'
 
   # ACR resource name (not the service connection name above) - needed for
   # `az aks update --attach-acr`, which takes the registry's own name.
@@ -42,7 +42,7 @@ variables:
 
   # Terraform remote state backend
   tfStateRG: 'CREDBASERG11'
-  tfStateStorage: 'credtfstate11'
+  tfStateStorage: 'sacredtfstate11'
   tfStateContainer: 'statefile'
   tfStateKey: 'credpay.terraform.tfstate'
 
@@ -56,7 +56,7 @@ variables:
   # bootstrap RG (same RG as the Terraform state storage account, not
   # rg-credpay). Terraform writes the Postgres secrets into it; the
   # pipeline reads them back below.
-  keyVaultName: 'credpaykv11'
+  keyVaultName: 'credpaykv111'
   keyVaultResourceGroup: 'CREDBASERG11'
 
 # =========================================================

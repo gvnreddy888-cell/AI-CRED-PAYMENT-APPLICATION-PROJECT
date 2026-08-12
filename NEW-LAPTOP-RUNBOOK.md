@@ -201,7 +201,7 @@ az storage account create `
   --encryption-services blob
 
   az storage account create `
-  --name credtfstate11 `
+  --name sacredtfstate11 `
   --resource-group CREDBASERG11 `
   --location canadacentral `
   --sku Standard_LRS `
@@ -215,7 +215,7 @@ az storage container create `
 
 az storage container create `
   --name statefile `
-  --account-name credtfstate11 `
+  --account-name sacredtfstate11 `
   --auth-mode login
 
 ### 5.2 Azure Container Registry (ACR)
@@ -252,7 +252,7 @@ az keyvault create `
 ```
 
 az keyvault create `
-  --name credpaykv11 `
+  --name credpaykv111 `
   --resource-group CREDBASERG11 `
   --location canadacentral `
   --enable-rbac-authorization true
@@ -275,7 +275,7 @@ az role assignment create `
 az role assignment create `
   --assignee "$(az ad signed-in-user show --query id -o tsv)" `
   --role "Key Vault Secrets Officer" `
-  --scope "$(az keyvault show --name credpaykv11 --resource-group CREDBASERG11 --query id -o tsv)"
+  --scope "$(az keyvault show --name credpaykv111 --resource-group CREDBASERG11 --query id -o tsv)"
 
 Role assignments can take a minute or two to propagate — if the next step
 fails with a permissions error immediately after this, just wait a bit and

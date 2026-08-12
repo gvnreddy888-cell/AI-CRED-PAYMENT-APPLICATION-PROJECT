@@ -3,8 +3,7 @@
 # =====================================================================
 
 # Azure Subscription ID
-subscription_id = "a58a447a-2e11-4d7d-adb3-f06238da8379"
-
+subscription_id = "511cc037-b418-42a0-b749-9598ba1ae942"
 # Azure Region
 location = "canadacentral"
 
@@ -27,5 +26,5 @@ database_name           = "credpay"
 log_retention_days = 30
 
 # ----- Key Vault -----
-key_vault_name                 = "credpaykv11"
+key_vault_name                 = "credpaykv111"
 key_vault_resource_group_name  = "CREDBASERG11"
